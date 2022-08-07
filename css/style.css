@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --color: #00bfa6;
+}
+
+/* CSS Body */
+body {
+    background: url('../Pictures/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+}
+
+.navbar .logo span {
+    padding-left: 5px;
+    text-transform: uppercase;
+
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    color: #00bfa6;
+    width: 42%;
+    height: 30px;
+    font-family: ubuntu;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.logo img {
+    width: 20px;
+    border-radius: 50%;
+    height: 25px;
+    padding: 2px;
+    line-height: 25px;
+
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar .logo .a_1 {
+    font-size: 13px;
+
+}
+
+/* Navigation  */
+.line{
+    background-color: black;
+    width: 33px;
+    border-top: 1px solid black;
+    height: 6px;
+   margin-left: 92%;
+   margin-top: 4px;
+   border-radius:27.3rem;
+}
+.navbar {
+    width: 110%;
+    display: flex;
+    height: 40px;
+    line-height: 30px;
+    font-family: ubuntu;
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+}
+
+.navlist {
+    float: right;
+
+}
+
+.navlist li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navlist a {
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.navlist a:hover {
+    color: grey;
+}
+
+/* Side Container */
+.intro {
+    background-color: white;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 10%;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    width: 80%;
+    height: 100%;
+
+}
+
+.my_img img {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.name {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: ubuntu;
+    width: 100%;
+    height: 60px;
+    color: #00bfa6;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.social {
+    display: inline;
+    width: 25px;
+    height: 25px;
+}
+
+/* About Me Container */
+.about_me1 hr {
+    width: 8.2rem;
+    border-top: 5px solid var(--color);
+    border-radius: 0.5rem;
+    padding-left: 0.4rem;
+    margin: 0;
+}
+
+.about_me {
+    background-color: white;
+    border: 2px solid white;
+    width: 80%;
+    border-radius: 0.5rem;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.2rem;
+}
+
+.about_me1 {
+    padding-left: 10px;
+}
+
+.about_me1 h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color);
+}
+
+.about_me1 p {
+    margin-top: 10px;
+}
+
+.about_me1 p span {
+    color: #00bfa6;
+    text-transform: capitalize;
+}
+
+.short_int {
+    padding: 0.4rem;
+    justify-content: space-between;
+    display: flex;
+}
+
+.about_2 {
+    margin-top: 10px;
+}
+
+.about_me li {
+    list-style: none;
+    padding-top: 8px;
+    padding-left: 10px;
+    background-color: white;
+    display: block;
+    border-radius: 0.2rem;
+
+}
+
+.about_me li span {
+    list-style: none;
+    padding-left: 5px;
+    background-color: #00bfa6;
+    display: inline;
+    border-radius: 0.2rem;
+    font-family: ubuntu;
+
+}
+
+/* Media Queries For Responsive */
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 92%;
+        height: 92%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+@media screen and(max-width:800px) {
+    .container {
+        margin-top: 10vh;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Contact Container */
+.Contact_Content h2 {
+    color: var(--color);
+    font-weight: bold;
+}
+
+.Contact_Content hr {
+    width: 8rem;
+    border-top: 5px solid var(--color);
+    border-radius: 0.5rem;
+    padding-left: 0.4rem;
+}
+
+form {
+    padding: 8px 5px;
+}
+
+.Contact_Content {
+    background-color: white;
+    border: 2px solid white;
+    width: 80%;
+    border-radius: 0.5rem;
+    height: 100%;
+    padding: 0.4rem;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: 'Baloo Bhai 2';
+}
+
+.Contact_Content form input {
+    width: 100%;
+    color: #00bfa6;
+    border: 2px solid white;
+    background-color: lightskyblue;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    font-size: 1.05rem;
+}
+
+.Contact_Content form textarea {
+    width: 100%;
+    border: 2px solid white;
+    background-color: lightskyblue;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    height: 5rem;
+    resize: none;
+}
+
+.Contact_Content form label {
+    font-family: 'Baloo Bhai 2';
+    padding-bottom: 0;
+}
+
+/* Blog Container */
+.blogs_content {
+    background-color: white;
+    border: 2px solid white;
+    width: 80%;
+    border-radius: 0.5rem;
+    height: 100%;
+    padding: 0.4rem;
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: 'Baloo Bhai 2';
+}
+
+.blogs_content h2 {
+    color: var(--color);
+}
+
+.blogs_content hr {
+    width: 6rem;
+    border-top: 5px solid var(--color);
+    border-radius: 0.5rem;
+    padding-left: 0.4rem;
+}
+
+.blogs_content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border: 2px solid var(--color);
+    border-radius: 0.4rem;
+}
